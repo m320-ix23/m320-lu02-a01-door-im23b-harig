@@ -1,40 +1,40 @@
 class Door:
-    """
-    Diese Klasse beschreibt eine Türe mit der Eigenschaft
-    color (Farbe)und den Zuständen
-    door_is_open (für geöffnete Türe) sowie
-    door_is_locked (für verriegelte Türe).
-    Die Türe überwacht die beiden Zustände und verhindert so Aktionen,
-    die nicht möglich sind.
-    Das verriegeln selber delegiert die Türe an ein
-    Objekt vom Typ Door_lock (Türschloss).
-    """
-    # Mit dem Keyword def wird eine Funktion bzw.
-    # eben ein Konstruktor deklariert.
-    # Der Konstruktor trägt IMMER den Namen
-    # __init__ und weist als ersten Parameter den Wert self auf.
-    # Danach folgen die Übergabeparameter,
-    # deren Werte dann den Attributen zugewiesen werden.
-    # Attribute können aber auch mit
-    # einem fixen Wert initialisiert werden.
-    # Konstruktoren werden als
-    # Erstes im Programm angeschrieben.
+  """
+  Diese Klasse beschreibt eine Türe mit der Eigenschaft
+  color (Farbe)und den Zuständen
+  door_is_open (für geöffnete Türe) sowie
+  door_is_locked (für verriegelte Türe).
+  Die Türe überwacht die beiden Zustände und verhindert so Aktionen,
+  die nicht möglich sind.
+  Das verriegeln selber delegiert die Türe an ein
+  Objekt vom Typ Door_lock (Türschloss).
+  """
+  # Mit dem Keyword def wird eine Funktion bzw.
+  # eben ein Konstruktor deklariert.
+  # Der Konstruktor trägt IMMER den Namen
+  # __init__ und weist als ersten Parameter den Wert self auf.
+  # Danach folgen die Übergabeparameter,
+  # deren Werte dann den Attributen zugewiesen werden.
+  # Attribute können aber auch mit
+  # einem fixen Wert initialisiert werden.
+  # Konstruktoren werden als
+  # Erstes im Programm angeschrieben.
 
 
 def __init__(self, ref2door_lock, base_color):
-    """
-    Erzeugt ein Tür-Objekt.
-    :param ref2door_lock:
-    :param base_color:
-    """
-    # ein privates Attribut muss im Konstruktor initialisiert
-    # werden und ist dann in der Klasse
-    # über self._name_des_Attributs ansprechbar.
-    self._the_door_lock = ref2door_lock
-    # Hier wird der Setter eines Attributs aufgerufen (siehe unten)
-    self.color = base_color
-    self._door_is_open = False
-    self._door_is_locked = False
+  """
+  Erzeugt ein Tür-Objekt.
+  :param ref2door_lock:
+  :param base_color:
+  """
+  # ein privates Attribut muss im Konstruktor initialisiert
+  # werden und ist dann in der Klasse
+  # über self._name_des_Attributs ansprechbar.
+  self._the_door_lock = ref2door_lock
+  # Hier wird der Setter eines Attributs aufgerufen (siehe unten)
+  self.color = base_color
+  self._door_is_open = False
+  self._door_is_locked = False
 
 
 # Nach den Konstruktoren folgen Methoden, die eine Verarbeitung auslösen.
