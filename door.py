@@ -27,7 +27,8 @@ def __init__(self, ref2door_lock, base_color):
     :param ref2door_lock:
     :param base_color:
     """
-    # ein privates Attribut muss im Konstruktor initialisiert werden und ist dann in der Klasse
+    # ein privates Attribut muss im Konstruktor initialisiert
+    # werden und ist dann in der Klasse
     # über self._name_des_Attributs ansprechbar.
     self._the_door_lock = ref2door_lock
     # Hier wird der Setter eines Attributs aufgerufen (siehe unten)
