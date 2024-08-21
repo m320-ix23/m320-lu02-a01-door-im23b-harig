@@ -79,7 +79,7 @@ class Door:
         return self._door_is_open
 
     @property
-    def door_ist_locked(self):
+    def door_is_locked(self):
         """
         getter-Methode für den Zustand door_is_locked
         :return: true, wenn die Türe verriegelt ist, sonst false
